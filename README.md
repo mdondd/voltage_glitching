@@ -15,3 +15,11 @@ We provide a FPGA flash script for convenience to flash the connected FPGA via t
 
 ## Usage
 The host control part is implemented in `host/glitch.py`. This file contains all code to configure the glitch offset, width, trigger, arming etc.
+
+## Connecting
+The connections are made via the PMOD header:
+
+![Pinout](doc/img/pmod.png)
+
+ - `G17`: trigger in
+ - `G19`: fault out
