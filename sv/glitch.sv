@@ -315,7 +315,7 @@ module fault_injector (
                 FI_WAIT_BETWEEN_REPEATS: begin
                     if (!enabled) begin
                         fi_state <= FI_IDLE;
-                    end else if (cycle_counter >= 32'd10 - 1) begin
+                    end else if (cycle_counter >= width - 1) begin
                         cycle_counter <= 32'd0;
                         fi_state <= FI_INJECT_FAULT;
                     end else begin

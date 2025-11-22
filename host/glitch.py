@@ -203,9 +203,9 @@ if __name__ == "__main__":
     g = Glitch(find_usb_device())
     print(f"Ping result: {g.ping()}")
 
-    g.set_repeat(1)
+    g.set_repeat(20)
     g.set_offset(1)
-    g.set_width(4000)
+    g.set_width(6000)
     g.manual_trigger()
     exit()
 
